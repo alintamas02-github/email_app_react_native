@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 // Setează cheia API SendGrid
-sendgrid.setApiKey("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");
+sendgrid.setApiKey("Your api key");
 
 app.use(bodyParser.json());
 
