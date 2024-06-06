@@ -14,13 +14,13 @@ const Getstarted = ({ navigation }) => {
             onPress={() => navigation.replace('Login')}
             style={[styles.button, {backgroundColor: 'black'}]}
           >
-            <Text style={[styles.buttonText, {color: 'white'}]}>Am deja un cont</Text>
+            <Text style={[styles.buttonText, {color: 'white'}]}>I have an account</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => navigation.replace('Signup')}
             style={[styles.button, {backgroundColor: 'white'}]}
           >
-            <Text style={[styles.buttonText, {color: 'black'}]}>Cont nou</Text>
+            <Text style={[styles.buttonText, {color: 'black'}]}>New accout</Text>
           </TouchableOpacity>
         </View>
       </View>

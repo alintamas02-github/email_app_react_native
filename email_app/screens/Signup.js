@@ -37,11 +37,11 @@ const Signup = () => {
                 userId: user.uid
             });
     
-            Alert.alert('Success', 'Cont creat cu succes!');
+            Alert.alert('Success', '');
             navigation.replace('Home', { userName: name });
 
         } catch (error) {
-            console.error('Eroare la creare :', error);
+            console.error('Erorr :', error);
             Alert.alert('Error', error.message);
         }
     };
@@ -56,13 +56,13 @@ const Signup = () => {
                         marginVertical: 12,
                         color: COLORS.black
                     }}>
-                        Creeaza cont
+                        Create account
                     </Text>
 
                     <Text style={{
                         fontSize: 16,
                         color: COLORS.black
-                    }}>Bucura-te de beneficiile tale </Text>
+                    }}>Enjoy</Text>
                 </View>
 
                 <View style={{ marginBottom: 12 }}>
@@ -83,7 +83,7 @@ const Signup = () => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Introduceti email'
+                            placeholder='Email'
                             placeholderTextColor={COLORS.black}
                             keyboardType='email-address'
                             style={{
@@ -113,7 +113,7 @@ const Signup = () => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Introduceti numele'
+                            placeholder='Name'
                             placeholderTextColor={COLORS.black}
                             style={{
                                 width: "100%"
@@ -142,7 +142,7 @@ const Signup = () => {
                         paddingLeft: 22
                     }}>
                         <TextInput
-                            placeholder='Introduceti parola'
+                            placeholder='Password'
                             placeholderTextColor={COLORS.black}
                             secureTextEntry={!isPasswordShown}
                             style={{
@@ -219,7 +219,7 @@ const Signup = () => {
                     justifyContent: "center",
                     marginVertical: 22
                 }}>
-                    <Text style={{ fontSize: 16, color: COLORS.black }}>Ai deja un cont ?</Text>
+                    <Text style={{ fontSize: 16, color: COLORS.black }}>Do you have an account?</Text>
                     <Pressable
                         onPress={() => navigation.navigate("Login")}
                     >

@@ -24,7 +24,7 @@ const SendMail = ({ route }) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "alex.gabor.8@gmail.com",
+          from: "",
           to: to,
           subject: subject,
           body: body,
@@ -37,7 +37,7 @@ const SendMail = ({ route }) => {
         
         const userDocRef = doc(db, 'users', user.uid);
         await addDoc(collection(userDocRef, 'mail'), {
-          from: "alex.gabor.8@gmail.com",
+          from: "",
           to: to,
           subject: subject,
           body: body,

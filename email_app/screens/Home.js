@@ -29,11 +29,11 @@ const Home = ({ route, navigation }) => {
                     const userData = userDoc.data();
                     setName(userData.name);
                 } else {
-                    setName('Utilizatorul nu există');
+                    setName('No user');
                 }
             } catch (error) {
                 console.error('Error fetching user details:', error);
-                setName('Eroare la obținerea detaliilor utilizatorului');
+                setName('Erorr');
             } finally {
                 setLoading(false);
             }
